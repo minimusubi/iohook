@@ -138,10 +138,11 @@ function build(runtime, version, abi) {
       'rebuild',
       '--target=' + version,
       '--arch=' + arch,
+      '--openssl_fips=X'
     ];
 
     if (/^electron/i.test(runtime)) {
-      args.push('--dist-url=https://atom.io/download/electron');
+      args.push('--dist-url=https://electronjs.org/headers');
     }
 
     if (parseInt(abi) >= 80) {
@@ -180,6 +181,7 @@ function build(runtime, version, abi) {
 
     let proc = spawn(gypJsPath, args, {
       env: process.env,
+      shell: true
     });
     proc.stdout.pipe(process.stdout);
     proc.stderr.pipe(process.stderr);
