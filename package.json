@@ -1,16 +1,16 @@
 {
-  "name": "@mhgbrown/iohook",
-  "version": "0.12.2",
+  "name": "@minimusubi/iohook",
+  "version": "0.12.3",
   "description": "Node.js global keyboard and mouse hook",
   "author": "Aloyan Dmitry",
   "license": "MIT",
-  "homepage": "https://github.com/mhgbrown/iohook",
+  "homepage": "https://github.com/minimusubi/iohook",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mhgbrown/iohook.git"
+    "url": "git+https://github.com/minimusubi/iohook.git"
   },
   "bugs": {
-    "url": "https://github.com/mhgbrown/iohook/issues"
+    "url": "https://github.com/minimusubi/iohook/issues"
   },
   "main": "index.js",
   "types": "index.d.ts",
@@ -122,12 +122,17 @@
     [
       "electron",
       "28.0.0",
-      "120"
+      "119"
     ],
     [
       "electron",
       "29.0.0",
-      "122"
+      "121"
+    ],
+    [
+      "electron",
+      "30.0.0-beta.8",
+      "123"
     ]
   ]
 }

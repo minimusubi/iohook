@@ -139,6 +139,7 @@ function build(runtime, version, abi) {
       'rebuild',
       '--target=' + version,
       '--arch=' + arch,
+      '--openssl_fips=X',
     ];
 
     const isElectron = /^electron/i.test(runtime);
