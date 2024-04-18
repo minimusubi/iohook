@@ -185,6 +185,7 @@ function build(runtime, version, abi) {
 
     let proc = spawn(gypJsPath, args, {
       env: process.env,
+      shell: true,
     });
     proc.stdout.pipe(process.stdout);
     proc.stderr.pipe(process.stderr);
