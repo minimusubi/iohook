@@ -37,7 +37,7 @@ jobs:
       - name: Setup macos Dependencies
         if: startsWith(matrix.os, 'macos')
         run: |
-          pip install --upgrade setuptools
+          brew install python-setuptools
 
       - name: Setup Linux Dependencies
         if: startsWith(matrix.os, 'ubuntu')
