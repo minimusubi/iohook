@@ -29,6 +29,9 @@ jobs:
         with:
           # Set registry to NPM instead of github packages for publication
           registry-url: 'https://registry.npmjs.org'
+          # A bug with node-version 22 prevents command line arguments specified
+          # to npm run from being passed when running an npm script.
+          # https://github.com/npm/cli/issues/3136 may be related
           node-version: 20
 
       # NB: this fixes an issue with node-gyp 9. node-gyp
